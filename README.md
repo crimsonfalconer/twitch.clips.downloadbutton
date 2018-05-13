@@ -1,4 +1,13 @@
 # twitch.vod.downloadbutton
+
+## Description
 Adds a Download Button to Twitch Vods
 
-Requires a Userscript manager such as TamperMoney or ViolentMonkey
+## Requirements
+You must first have a userscript extension installed on your browser such as TamperMonkey.  
+[Firefox Extension Store](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)  
+[Chrome Webstore](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+
+
+## Install
+Once you have a userscript extension installed in your browser [click here to install](https://github.com/crimsonfalconer/twitch.vod.downloadbutton/raw/master/twitch.vod.downloadbutton.user.js).
