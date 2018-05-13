@@ -7,12 +7,21 @@
 // @include     https://player.twitch.tv/*
 // @updateURL       https://github.com/crimsonfalconer/twitch.vod.downloadbutton/raw/master/twitch.vod.downloadbutton.user.js
 // @downloadURL     https://github.com/crimsonfalconer/twitch.vod.downloadbutton/raw/master/twitch.vod.downloadbutton.user.js
-// @version     9
-// @updateVersion   9
+// @version     10
+// @updateVersion   10
 // ==/UserScript==
 
 var chk = 0;
 
+// Hook 'd' key for easy download
+document.onkeypress = function (e) {
+    e = e || window.event;
+    if(e.key == 'd'){
+        top.window.location.href = document.getElementsByTagName('video')[0].src
+    }
+};
+
+// Create download button on Twitch Player
 function CreateDownloadButton()
 {
   var videoLink = document.getElementsByTagName('video')[0].src;
@@ -29,6 +38,7 @@ function CreateDownloadButton()
   panel.insertBefore(save, panel.firstChild);
 }
 
+// Wait for player to initialise before creating button
 var i = setInterval(function() {
     if(document.getElementsByClassName('player-buttons-right').length < 1)
     {
