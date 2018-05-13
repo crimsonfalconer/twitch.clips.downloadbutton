@@ -5,8 +5,8 @@
 // @namespace   https://github.com/crimsonfalconer/twitch.vod.downloadbutton
 // @include     https://clips.twitch.tv/embed*
 // @include     https://player.twitch.tv/*
-// @version     7
-// @updateVersion   7
+// @version     8
+// @updateVersion   8
 // ==/UserScript==
 
 var chk = 0;
