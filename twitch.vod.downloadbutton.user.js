@@ -7,8 +7,8 @@
 // @include     https://player.twitch.tv/*
 // @updateURL       https://github.com/crimsonfalconer/twitch.vod.downloadbutton/raw/master/twitch.vod.downloadbutton.user.js
 // @downloadURL     https://github.com/crimsonfalconer/twitch.vod.downloadbutton/raw/master/twitch.vod.downloadbutton.user.js
-// @version     8
-// @updateVersion   8
+// @version     9
+// @updateVersion   9
 // ==/UserScript==
 
 var chk = 0;
@@ -22,20 +22,10 @@ function CreateDownloadButton()
   save.type = 'button';
   save.value = 'Download';
   save.onclick = function(){top.window.location.href = document.getElementsByTagName('video')[0].src};
-
-  var spn = document.createElement('span');
-
-  var tip = document.createElement('span');
-  tip.classList.add('player-tip');
-
   var btnSpn = document.createElement('span');
   btnSpn.setAttribute('style', 'color:#ffffff;font-size:20px')
   btnSpn.append('D');
-
-  spn.appendChild(tip);
-  spn.appendChild(btnSpn);
-  save.appendChild(spn);
-
+  save.appendChild(btnSpn);
   panel.insertBefore(save, panel.firstChild);
 }
 
