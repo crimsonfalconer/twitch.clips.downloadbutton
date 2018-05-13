@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name        Twitch Clip Downloader
-// @namespace   https://github.com/crimsonfalconer/twitchcliplink
+// @author      CrimsonFalconer
+// @description Add download button for TwitchVods
+// @namespace   https://github.com/crimsonfalconer/twitch.vod.downloadbutton
 // @include     https://clips.twitch.tv/embed*
 // @include     https://player.twitch.tv/*
-// @version     5
+// @version     6
 // ==/UserScript==
 
 var chk = 0;
