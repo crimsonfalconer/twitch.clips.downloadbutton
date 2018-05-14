@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name        Twitch Clip Downloader
+// @name        Twitch Clips Downloader
 // @author      CrimsonFalconer
 // @description Add download button for TwitchVods
-// @namespace   https://github.com/crimsonfalconer/twitch.vod.downloadbutton
+// @namespace   https://github.com/crimsonfalconer/twitch.clips.downloadbutton
 // @include     https://clips.twitch.tv/embed*
 // @include     https://player.twitch.tv/*
-// @updateURL       https://github.com/crimsonfalconer/twitch.vod.downloadbutton/raw/master/twitch.vod.downloadbutton.user.js
-// @downloadURL     https://github.com/crimsonfalconer/twitch.vod.downloadbutton/raw/master/twitch.vod.downloadbutton.user.js
+// @updateURL       https://github.com/crimsonfalconer/twitch.clips.downloadbutton/raw/master/twitch.clips.downloadbutton.user.js
+// @downloadURL     https://github.com/crimsonfalconer/twitch.clips.downloadbutton/raw/master/twitch.clips.downloadbutton.user.js
 // @version     10
 // @updateVersion   10
 // ==/UserScript==
@@ -24,7 +24,6 @@ document.onkeypress = function (e) {
 // Create download button on Twitch Player
 function CreateDownloadButton()
 {
-  var videoLink = document.getElementsByTagName('video')[0].src;
   var panel = document.getElementsByClassName('player-buttons-right')[0];
   var save = document.createElement('button');
   save.classList.add('player-button');
