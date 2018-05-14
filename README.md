@@ -10,4 +10,4 @@ You must first have a userscript extension installed on your browser such as Tam
 
 
 ## Install
-Once you have a userscript extension installed in your browser [click here to install](https://github.com/crimsonfalconer/twitch.vod.downloadbutton/raw/master/twitch.vod.downloadbutton.user.js).
+Once you have a userscript extension installed in your browser [click here to install](https://github.com/crimsonfalconer/twitch.clips.downloadbutton/raw/master/twitch.clips.downloadbutton.user.js).
