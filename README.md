@@ -1,4 +1,4 @@
-# twitch.vod.downloadbutton
+# twitch.clips.downloadbutton
 
 ## Description
 Adds a Download Button to Twitch Vods
