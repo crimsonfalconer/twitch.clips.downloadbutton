@@ -4,6 +4,7 @@
 // @description Add download button for TwitchVods
 // @namespace   https://github.com/crimsonfalconer/twitch.clips.downloadbutton
 // @include     https://clips.twitch.tv/embed*
+// @include     https://clips.twitch.tv/*
 // @include     https://player.twitch.tv/*
 // @updateURL       https://github.com/crimsonfalconer/twitch.clips.downloadbutton/raw/master/twitch.clips.downloadbutton.user.js
 // @downloadURL     https://github.com/crimsonfalconer/twitch.clips.downloadbutton/raw/master/twitch.clips.downloadbutton.user.js
