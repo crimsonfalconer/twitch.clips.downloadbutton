@@ -8,8 +8,8 @@
 // @include     https://player.twitch.tv/*
 // @updateURL       https://github.com/crimsonfalconer/twitch.clips.downloadbutton/raw/master/twitch.clips.downloadbutton.user.js
 // @downloadURL     https://github.com/crimsonfalconer/twitch.clips.downloadbutton/raw/master/twitch.clips.downloadbutton.user.js
-// @version     10
-// @updateVersion   10
+// @version     11
+// @updateVersion   11
 // ==/UserScript==
 
 var chk = 0;
@@ -17,7 +17,7 @@ var chk = 0;
 // Hook 'd' key for easy download
 document.onkeypress = function (e) {
     e = e || window.event;
-    if(e.key == 'd'){
+    if(e.key == 'd' && event.altKey && event.shiftKey){
         top.window.location.href = document.getElementsByTagName('video')[0].src
     }
 };
